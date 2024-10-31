@@ -1,0 +1,102 @@
+# WHILE LOOP = execute some code While some conditions remain true
+#iterable = loopable (more than one)
+
+#EXAMPLE OF AN INFINTE LOOP
+# name = input ("enter your name")
+# #interation= loop   iterate(verb)-looping over something
+# while name == "":
+#     print("You did not enter your name")
+#     #INFINTE LOOPS ARE TERRIBLE unless you have a reason for something to continue forever
+# print (f"Hello {name}")
+
+# age = int (input("enter your age: "))
+# while age < 0:
+#     print ("Age can't be negative")
+#     age = int (input("enter your age: "))
+# print (f"You are {age} years old")
+
+# food = input ("Enter a food you like to eat (q to quit): ")
+# while not food == "q":
+#     print (f"You like {food}")
+#     food = input ("Enter a food you like to eat (q to quit): ")
+# print ("bye")
+
+# num = input ("Ebter a number between 1-10: ")
+# while num < 1 or num > 10:
+#     print (f"{num} is not valid")
+#     num = input ("Ebter a number between 1-10: ")
+
+# print (f"your number is {num}")
+
+
+
+# FOR LOOPS = execute a block of code, a fixed number of times
+                #You can interate over a range, string, sequence, ect
+
+# for x in range(1,11):
+#     print(x)
+#----prints 1, 2 ,3 , 4, 5 , 6 , 7, 8, 9, 10----
+
+# for x in  reversed (range(1,11, 2)):
+#     print(x)
+#---prints 10, 9, 8, 7, 6, ,5, 4, 3, 2, 1---
+
+# for x in  range(1,11, 2):
+#     print(x)
+#---prints 2, 4, 6, 8, 10----
+
+# credit_card= "1234-5678-9012-3456"
+# for x in credit_card:
+#     print (x)
+
+# for x in range(1, 21):
+#     if x== 13 or x== 14 or x== 15:
+#         continue
+#     else:
+#         print (x)
+#---prints 1-20 but skips over 13, 14, and 15----
+
+# for x in range(1, 21):
+#     if x== 13 or x== 14 or x== 15:
+#         break
+#     else:
+#         print (x)
+#---prints 1-12 and it stops because of the break command---
+        
+
+#CLASSWORK EXAMPLES
+# horror_characters= ["Freddy Kouger", "Jason Voorhees", "Michael Myers", "Pennywise", "Chucky"]
+
+# for character in horror_characters:
+#     if character == "Jason Voorhees":
+#         continue
+#     print (character)
+
+# if character == "Michael Myers":
+#     character== "Dracula"
+# print (character)
+
+# if character == "Freddy Couger":
+#     character== "Frankenstien"
+# print (character)
+
+
+horror_movies = ["Childs Play", "The Conjuring", "It", "Insidous", "The Shining"]
+for movie in horror_movies:
+    print (movie)
+
+for movie in horror_movies:
+    if movie == "The Conjuring":
+        continue
+    else:
+        print (movie)
+
+for movie in horror_movies:
+    if movie == "The Shining":
+        break
+    else:
+        print (movie)
+
+if movie == "Insidous":
+     movie == "The Night of the Living Dead"
+print(movie)
