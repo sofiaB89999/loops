@@ -1,23 +1,36 @@
 #Group Work by Sofia Ana Barrios and Alan Hernandez
 #problem 1
 # asks user for their grade
-grade = input ("What's your grade? Numbers only")
+
 
 #while grade isn't equal to negative 1 and less or equal to 100 the user can be scored accordingly
-while grade != -1 and grade > 100:
 # seperates scores into different categories based on the number
 # scores from 90-100 get Execlent
-    if grade > 90:
-        print ("Execelent")
-# scores from 70-89 get Good
-    if grade > 70 and grade <= 89:
-        print ("Good")
-# scores from 50-69 get Pass
-    if grade > 50 and grade <= 69:
-        print ("Pass")
-#anything below a 50 is considered Failing
+
+while True:
+    grade = int(input("Enter a student score (enter a negative number to stop): "))
+    if grade < 0:
+        break
+    elif grade >= 90 and grade <= 100:
+        print("Excellent")
+        excellent_count = ("90-100")
+    elif grade >= 70 and grade <= 89:
+        print("Good")
+        good_count = ("70-89")
+    elif grade >= 50 and grade <= 69:
+        print("Pass")
+        pass_count = 50-69
+    elif grade < 50:
+        print("Fail")
+        fail_count = ("Anything below 50")
     else:
-        print ("Fail")
+        print("Invalid score, please enter a score between 0 and 100.")
+
+print("\nFinal Counts:")
+print(f"Excellent: {excellent_count}")
+print(f"Good: {good_count}")
+print(f"Pass: {pass_count}")
+print(f"Fail: {fail_count}")
 
 # Problem 2
 start, end = map(int, input("Give me a starting and ending number (e.g. 5 20): ").split())
